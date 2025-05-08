@@ -24,8 +24,15 @@
     }
   }
 
-@theme {
-    --color-cosmic: #78435E;
-    --color-viola: #C290AA;
-    --color-violet: #B03CB6;
+  @layer utilities {
+    .bg-cosmic { background-color: #78435E; }
+    .bg-viola { background-color: #C290AA; }
+    .bg-violet { background-color: #B03CB6; }
+  
+    .from-cosmic { --tw-gradient-from: #78435E; }
+    .via-viola { --tw-gradient-stops: var(--tw-gradient-from), #C290AA; }
+    .to-cosmic { --tw-gradient-to: #78435E; }
+  
+    .text-cosmic { color: #78435E; }
+    .hover\:bg-cosmic:hover { background-color: #78435E; }
   }

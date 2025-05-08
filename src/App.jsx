@@ -41,7 +41,7 @@ function App() {
     About: (
       <div>
         <img
-          src="/DSC_5637 copy.jpg"
+          src="/profilepic.jpg"
           alt="Profile avatar"
           className="w-43 h-43 rounded object-cover float-right ml-2 mb-2 shadow-md transition-transform hover:scale-105"
         />
