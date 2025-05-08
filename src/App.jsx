@@ -54,7 +54,7 @@ function App() {
         />
         <p className="mb-2 text-lg font-semibold">Hi, I'm Trinh</p>
         <p className="text-sm">
-          B.S. in Computer Science and plan to pursue a Master's in Computer
+          B.S. in Computer Science, planning to pursue a Master's in Computer
           Engineering.
         </p>
       </div>
