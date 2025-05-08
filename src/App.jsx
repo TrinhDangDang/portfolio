@@ -10,6 +10,7 @@ const themes = {
     active: "bg-indigo-300",
     hover: "hover:bg-indigo-200",
     border: "border-black",
+    text: "text-black"
   },
   "Sunset Glow": {
     gradient: "from-red-100 via-white to-yellow-100",
@@ -18,14 +19,15 @@ const themes = {
     active: "bg-yellow-300",
     hover: "hover:bg-yellow-200",
     border: "border-indigo-500",
+    text: "text-black"
   },
- "Maroon Electric": {
-  gradient: "from-maroon via-white to-wine",
-blobs: ["bg-maroon", "bg-rose", "bg-wine"],
-tab: "bg-maroon",
-active: "bg-wine",
-hover: "hover:bg-rose",
-border: "border-maroon",
+ "Maroon": {
+  gradient: "from-cosmic via-viola to-cosmic",
+blobs: ["bg-cosmic", "bg-viola", "bg-violet"],
+tab: "bg-viola",
+active: "bg-cosmic",
+hover: "hover:bg-cosmic",
+text: "text-white"
 },
 };
 
@@ -41,11 +43,11 @@ function App() {
         <img
           src="/DSC_5637 copy.jpg"
           alt="Profile avatar"
-          className="w-45 h-45 rounded object-cover float-right ml-4 mb-2 shadow-md transition-transform hover:scale-105"
+          className="w-43 h-43 rounded object-cover float-right ml-2 mb-2 shadow-md transition-transform hover:scale-105"
         />
         <p className="mb-2 text-lg font-semibold">Hi, I'm Trinh</p>
         <p className="text-sm">
-          I have a B.S. in Computer Science and plan to pursue a Master's in Computer Engineering.
+        B.S. in Computer Science and plan to pursue a Master's in Computer Engineering.
         </p>
       </div>
     ),
@@ -123,7 +125,7 @@ function App() {
         {/* 📁 Folder UI */}
         <div className="relative bg-white w-80 rounded-t-xl shadow-md z-10">
           {/* Tabs */}
-          <div className={`flex space-x-2 ${current.tab} px-4 py-2 rounded-t-md shadow-sm`}>
+          <div className={`flex space-x-2 ${current.tab} ${current.text} px-4 py-2 rounded-t-md shadow-sm`}>
             {tabs.map((tab) => (
               <button
                 key={tab}
